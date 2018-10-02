@@ -1,7 +1,7 @@
 
-=======================================
+================================================
 THIS IS A FORK FROM: GULP inline-base64
-=======================================
+================================================
 
 All credits to the authors of original software. (I had issues with line 49, it needed to add handle exception to work properly in my case).
 
