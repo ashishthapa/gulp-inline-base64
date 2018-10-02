@@ -1,5 +1,5 @@
 {
-    "name": "gulp-inline-base64",
+    "name": "trac-base64",
     "version": "0.1.5",
     "description": "Convert assets to inline datauri, ideal to integrate small pictures in your css.",
     "main": "index.js",

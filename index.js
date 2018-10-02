@@ -35,7 +35,7 @@ module.exports = function(opts) {
             for (var i = 0, len = matches.length; i < len; i++) {
                 if (matches[i].url.indexOf('data:image') === -1) { //if find -> image already decoded
                     var filepath = app_path + path.normalize(matches[i].url);
-                    if (fs.existsSync(filepath)) {
+                    if (fs.existsSync(filepath) && !fs.lstatSync(filepath).isDirectory()) {
                         var size = fs.statSync(filepath).size;
 
                         // File will not be included because of its size

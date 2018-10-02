@@ -3,7 +3,10 @@
 THIS IS A FORK FROM: GULP inline-base64
 ===========================================
 
-All credits to the authors of original software. (I had issues with line 49, it needed to handle exception to work properly in my case).
+All credits to the authors of original software. (I had issues with line
+38: it needed to replace if (fs.existsSync(filepath) with
+    if (fs.existsSync(filepath) && !fs.lstatSync(filepath).isDirectory()) 
+49: it needed to handle exception to work properly in my case).
 Link to original software: https://github.com/G33kLabs/gulp-inline-base64
 
 GULP inline-base64
