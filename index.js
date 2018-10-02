@@ -46,8 +46,13 @@ module.exports = function(opts) {
 
                         // Else replace by inline base64 version
                         else {
-                            var b = fs.readFileSync(filepath);
-                            str = str.replace(matches[i].txt, 'url(' + ('data:' + mime.lookup(filepath) + ';base64,' + b.toString('base64')) + ')');
+                            try {
+                                var b = fs.readFileSync(filepath);
+                                str = str.replace(matches[i].txt, 'url(' + ('data:' + mime.lookup(filepath) + ';base64,' + b.toString('base64')) + ')');
+                            } catch (e) {
+                           
+                            }
+                            
                         }
 
                     } else {
