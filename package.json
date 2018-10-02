@@ -9,12 +9,12 @@
         "mime": "x.x.x"
     },
     "author": {
-        "name": "G33kLabs",
-        "email": "contact@g33klabs.fr"
+        "name": "ashishthapa",
+        "email": "acis.thapa@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/G33kLabs/gulp-inline-base64.git"
+        "url": "git@github.com:ashishthapa/gulp-inline-base64.git"
     },
     "license": "MIT",
     "engines": {
